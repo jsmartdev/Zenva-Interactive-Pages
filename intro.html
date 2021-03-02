@@ -1,4 +1,10 @@
-<head></head>
+<head>
+    <style>
+        #div1 {
+            background-color: #00ff00;
+        }
+    </style>
+</head>
 
 <body>
     <div class="class1" id="div1">
@@ -7,14 +13,27 @@
     </div>
     <button  class="class1" id="button1">Press Me</button>
 
-   <script>
-       let class1 = document.getElementsByTagName("class1");
-       let button1 = document.getElementById("button1")
-       let divs = document.getElementsByTagName("DIV")
-       let first = document.querySelector(".class1")
-       let all = document.querySelectorAll(".class1")
-       let div1 = document.getElementById("div1")
-       let innerDivs = div1.getElementsByClassName("class1")
-       alert(innerDivs[0].innerHTML)
+    <script>
+        let div1 = document.getElementById("div1");
+        let divClass = div1.getAttribute("class"); 
+        let div1HTML = div1.innerHTML;
+        let noValueDiv1Color = div1.style.backgroundColor;
+        let div1ComputedStyle = window.getComputedStyle(div1).backgroundColor;
+        div1.setAttribute("class", "class2");
+        div1.innerHTML = "Goodbye"
+        div1.style.backgroundColor = "#0000ff";
+        div1.setAttribute("style", "height: 100px; background-color: #0000ff")
+        //alert();
+        /*
+        let class1 = document.getElementsByTagName("class1");
+        let button1 = document.getElementById("button1")
+        let divs = document.getElementsByTagName("DIV")
+        let first = document.querySelector(".class1")
+        let all = document.querySelectorAll(".class1")
+        let div1 = document.getElementById("div1")
+        let innerDivs = div1.getElementsByClassName("class1")
+        alert(innerDivs[0].innerHTML) 
+        */
+        
    </script> 
 </body>
