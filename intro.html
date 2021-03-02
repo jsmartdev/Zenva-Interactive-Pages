@@ -1,0 +1,20 @@
+<head></head>
+
+<body>
+    <div class="class1" id="div1">
+        Hello
+        <div class="class1">World</div>
+    </div>
+    <button  class="class1" id="button1">Press Me</button>
+
+   <script>
+       let class1 = document.getElementsByTagName("class1");
+       let button1 = document.getElementById("button1")
+       let divs = document.getElementsByTagName("DIV")
+       let first = document.querySelector(".class1")
+       let all = document.querySelectorAll(".class1")
+       let div1 = document.getElementById("div1")
+       let innerDivs = div1.getElementsByClassName("class1")
+       alert(innerDivs[0].innerHTML)
+   </script> 
+</body>
