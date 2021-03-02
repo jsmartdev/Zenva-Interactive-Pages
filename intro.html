@@ -14,6 +14,14 @@
     <button  class="class1" id="button1">Press Me</button>
 
     <script>
+
+        let div1 = document.getElementById("div1");
+        let newDiv = document.createElement("div");
+        newDiv.innerHTML = "Hello there!";
+        div1.appendChild(newDiv);
+        document.body.removeChild(div1); 
+
+        /*
         let div1 = document.getElementById("div1");
         let divClass = div1.getAttribute("class"); 
         let div1HTML = div1.innerHTML;
@@ -35,5 +43,5 @@
         alert(innerDivs[0].innerHTML) 
         */
         
-   </script> 
+    </script> 
 </body>
