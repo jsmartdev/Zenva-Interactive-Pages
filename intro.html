@@ -14,12 +14,31 @@
     <button  class="class1" id="button1">Press Me</button>
 
     <script>
+        
+        window.addEventListener('DOMContentLoaded', (event) => {
+        console.log('DOM fully loaded and parsed');
+        });
 
+        document.addEventListener("DOMContentLoaded", function(event) {
+            alert("Page has been loaded!")
+        });
+
+        document.getElementById("div1").addEventListener("mouseover", function(event) {
+            event.target.style.backgroundColor = '0000ff';
+        });
+
+        let button1 = document.getElementById("button1");
+        button1.addEventListener("click", function(event) {
+            target = event.target
+            alert(target.innerHTML);
+        });
+
+        /*
         let div1 = document.getElementById("div1");
         let newDiv = document.createElement("div");
         newDiv.innerHTML = "Hello there!";
         div1.appendChild(newDiv);
-        document.body.removeChild(div1); 
+        document.body.removeChild(div1); */
 
         /*
         let div1 = document.getElementById("div1");
