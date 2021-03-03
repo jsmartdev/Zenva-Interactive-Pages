@@ -12,9 +12,19 @@
         <div class="class1">World</div>
     </div>
     <button  class="class1" id="button1">Press Me</button>
+    <form id="form">
+        Name: <input type="text">
+        <input type="submit" value="Save">
+    </form>
 
     <script>
         
+        let form = document.getElementById("form")
+        form.addEventListener("submit", (event) => {
+            let textInput = form.elements[0]
+        });
+        
+        /*
         window.addEventListener('DOMContentLoaded', (event) => {
         console.log('DOM fully loaded and parsed');
         });
@@ -31,7 +41,7 @@
         button1.addEventListener("click", function(event) {
             target = event.target
             alert(target.innerHTML);
-        });
+        }); */
 
         /*
         let div1 = document.getElementById("div1");
